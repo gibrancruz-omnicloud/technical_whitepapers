@@ -20,8 +20,8 @@ graph TD
             DNS[Headless Service<br/>Descubrimiento de Topología]
             
             Pod1[(Redis Nodo 1<br/>Master)] <-.-> Pod2[(Redis Nodo 2<br/>Master)]
-            Pod2 <.-.-> Pod3[(Redis Nodo 3<br/>Master)]
-            Pod3 <.-.-> Pod1
+            Pod2 <-.-> Pod3[(Redis Nodo 3<br/>Master)]
+            Pod3 <-.-> Pod1
             
             Pod4[(Redis Nodo 4<br/>Replica 1)] -.-> Pod1
             Pod5[(Redis Nodo 5<br/>Replica 2)] -.-> Pod2
