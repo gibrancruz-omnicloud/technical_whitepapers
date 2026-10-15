@@ -19,7 +19,7 @@ graph TD
         subgraph Redis_Native_Cluster [Redis Cluster Nativo]
             DNS[Headless Service<br/>Descubrimiento de Topología]
             
-            Pod1[(Redis Nodo 1<br/>Master)] <.-.-> Pod2[(Redis Nodo 2<br/>Master)]
+            Pod1[(Redis Nodo 1<br/>Master)] <-.-> Pod2[(Redis Nodo 2<br/>Master)]
             Pod2 <.-.-> Pod3[(Redis Nodo 3<br/>Master)]
             Pod3 <.-.-> Pod1
             
