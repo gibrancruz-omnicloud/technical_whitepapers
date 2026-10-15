@@ -12,8 +12,8 @@ graph TD
     subgraph K8s_Cluster [Clúster de Kubernetes]
         
         subgraph Microservicios [Capa de Aplicación]
-            MS1[ "Microservicio A (Cluster-Aware Client)" ]
-            MS2[ "Microservicio B (Cluster-Aware Client)" ]
+            MS1["Microservicio A (Cluster-Aware Client)"]
+            MS2["Microservicio B (Cluster-Aware Client)"]
         end
 
         subgraph Redis_Native_Cluster [Redis Cluster Nativo]
@@ -50,8 +50,8 @@ graph TD
     subgraph K8s_Cluster [Clúster de Kubernetes]
         
         subgraph Microservicios [Capa de Aplicación]
-            MS1[ "Microservicio A (Cliente Tradicional)" ]
-            MS2[ "Microservicio B (Cliente Tradicional)" ]
+            MS1["Microservicio A (Cliente Tradicional)"]
+            MS2["Microservicio B (Cliente Tradicional)"]
         end
 
         ProxySVC[Service LoadBalancer / ClusterIP]
